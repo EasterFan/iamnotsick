@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <div className="Header">
-      <h1>This website will self destruct - 遗愿清单</h1>
+      <h1>我的遗愿清单</h1>
     </div>
   );
 }
