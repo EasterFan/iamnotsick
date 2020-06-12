@@ -1,5 +1,5 @@
 import React from 'react';
-import { WiredButton, WiredCard, WiredIconButton } from "wired-elements"
+import { WiredButton, WiredCard, WiredFab } from "wired-elements"
 import './Mod.css';
 
 function Mod() {
@@ -8,9 +8,9 @@ function Mod() {
       <wired-card elevation="3">
         <wired-button> Read A Message </wired-button>
 
-        <wired-icon-button class="red">
-          <mwc-icon>favorite</mwc-icon>
-        </wired-icon-button>
+        <wired-fab class="red">
+          <mwc-icon></mwc-icon>
+        </wired-fab>
 
         <wired-button> Feeling Down? </wired-button>
       </wired-card>

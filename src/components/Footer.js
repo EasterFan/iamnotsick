@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
       <wired-card>
-          A site by @EasterFan, 给我三连，举报页面，隐私条款
+          A site by @EasterFan, 隐私条款
       </wired-card>
     </div>
   );

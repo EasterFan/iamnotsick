@@ -6,7 +6,7 @@ function MyWord() {
   return (
     <div class="myword flex">
           <div class="letter">
-            <wired-textarea elevation="3" rows="6" value="亲爱的,&#13;"></wired-textarea>
+            <wired-textarea elevation="3" rows="6" value="啊, 我想：&#13;"></wired-textarea>
           </div>
 
           <div class="send"><wired-button> Send Me </wired-button></div>
