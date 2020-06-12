@@ -5,7 +5,7 @@ import './Mod.css';
 function Mod() {
   return (
     <div class="mod">
-      <wired-card>
+      <wired-card elevation="3">
         <wired-button> Read A Message </wired-button>
 
         <wired-icon-button class="red">
@@ -14,7 +14,7 @@ function Mod() {
 
         <wired-button> Feeling Down? </wired-button>
       </wired-card>
-      
+
     </div>
 
   );
