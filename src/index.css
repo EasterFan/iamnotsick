@@ -21,7 +21,7 @@ body {
 } */
 
 @font-face {
-    font-family: "chineseBaby"; /* 名字任意取 */
+    font-family: "chineseBaby"; /* 中文娃娃体 */
     src: url("fonts/ZCOOLKuaiLe-Regular.ttf") format("truetype");
     font-style:normal;
     font-weight:normal;
