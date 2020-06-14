@@ -31,12 +31,10 @@ wired-card {
 }
 
 
-wired-textarea {
-  box-sizing: border-box;
+.wired-textarea#textarea {
   text-align: left;
-  height: 60%;
-  width: inherit;
   font-family: 'chineseBaby', sans-serif;
+  font-weight: bold;
 }
 
 .letter{

@@ -4,11 +4,11 @@ import './Mod.css';
 
 function Mod() {
   return (
-    <div class="mod">
+    <div className="mod">
       <wired-card elevation="3">
         <wired-button> Read A Message </wired-button>
 
-        <wired-fab class="red">
+        <wired-fab className="red">
           <mwc-icon></mwc-icon>
         </wired-fab>
 
