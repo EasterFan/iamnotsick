@@ -31,7 +31,7 @@ wired-card {
 }
 
 
-.wired-textarea#textarea {
+wired-textarea {
   text-align: left;
   font-family: 'chineseBaby', sans-serif;
   font-weight: bold;

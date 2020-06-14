@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-// import { WiredButton, WiredCard } from "wired-elements";
-import { WiredButton, WiredCard, WiredTextArea } from "react-wired";
+import { WiredButton, WiredCard, WiredTextArea } from "wired-elements";
 import './MyWord.css';
 import  axios from 'axios';
 
@@ -18,6 +17,7 @@ class MyWord extends React.Component {
   }
 
   changeHandle(event) {
+    console.log(event.target.value);
     this.setState({content: event.target.value});
   }
 
@@ -27,7 +27,6 @@ class MyWord extends React.Component {
       letter: this.state.content
     })
     .then(function (response) {
-      console.log(self,"=======",this);
       self.setState({isClicked: true});
       console.log(response);
     })
@@ -40,7 +39,7 @@ class MyWord extends React.Component {
     return (
       <div className="myword flex" style={{display: this.state.isClicked ? "none" : "block"}}>
             <div className="letter">
-              <WiredTextArea className="wired-textarea" levation="3" rows="6" value={this.state.content} onChange={this.changeHandle}/>
+              <wired-textarea levation="3" rows="6" value={this.state.content} onInput={this.changeHandle}/>
             </div>
 
             <div className="send"><wired-button onClick={this.saveLetter}> Send Me </wired-button></div>
