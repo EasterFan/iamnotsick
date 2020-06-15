@@ -28,6 +28,8 @@ wired-card {
   margin-bottom: 5%;
   margin-left: 15%;
   background-color: #e6ddd0;
+  /*white-space: pre-line;*/
+  text-align: left;
 }
 
 
@@ -40,7 +42,7 @@ wired-textarea {
 .letter{
   height: 80%;
   width: 90%;
-  display: flex
+  display: flex;
   position:relative;
   align-self: center;
 }
@@ -50,4 +52,8 @@ wired-textarea {
 
   width: 10%;
   align-self: flex-end;
+}
+
+span {
+  display: block;
 }
