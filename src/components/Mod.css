@@ -1,11 +1,13 @@
 wired-icon-button {
-  margin: 0 10px;
-}
-
-wired-fab {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 .red {
-  color: red;
+    color: red;
 }
+
+#read {
+    width: 50%;
+}
+
+

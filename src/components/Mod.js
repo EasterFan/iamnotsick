@@ -15,11 +15,11 @@ class Mod extends React.Component {
     }
 
     readLetter(event) {
-
         let self = this;
         axios.get('/letter')
             .then(function (response) {
-                self.setState({message: response.data.message});
+                self.setState({message: [response.data.message]});
+                self.setState({title: [response.data.title]});
             })
             .catch(function (error) {
                 console.log(error);
@@ -33,10 +33,12 @@ class Mod extends React.Component {
         let defaultItem = this.state.message.map((item, index) => <span key={index}> {item}  </span>);
         return (
             <div className="mod">
-                <wired-card id="read" elevation="3">
-                    {defaulttitle}
-                    {defaultItem}
-                </wired-card>
+                <div>
+                    <wired-card id="read" elevation="3">
+                        {defaulttitle}
+                        {defaultItem}
+                    </wired-card>
+                </div>
 
                 <wired-card elevation="3">
                     <wired-button onClick={this.readLetter}> Read A Message</wired-button>
