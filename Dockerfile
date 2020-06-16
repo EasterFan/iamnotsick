@@ -1,9 +1,10 @@
-FROM nginx:latest
+FROM node:12.16.1
 
 LABEL maintainer = "fan.eastor@gmail.com"
 LABEL version = "1.0"
 LABEL description = "front-end of lastwish"
 
-ADD ./dist/ /usr/share/nginx/html/
-ADD nginx.conf /etc/nginx/
-EXPOSE 80
+COPY . .
+RUN npm install
+EXPOSE 1234
+CMD ["npm","start"]
