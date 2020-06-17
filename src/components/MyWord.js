@@ -3,7 +3,12 @@ import { WiredButton, WiredCard, WiredTextArea } from "wired-elements";
 import './MyWord.css';
 import  axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:8080';
+
+const localUrl = "http://localhost:8080";
+const prodUrl = "http://123.207.114.30:8081";
+let originUrl = window.location.href.split(":")[1];
+
+axios.defaults.baseURL = originUrl !== "//localhost" ? prodUrl : localUrl;
 
 class MyWord extends React.Component {
   constructor(props) {
